@@ -41,7 +41,7 @@ export default function AccessPortal() {
       </article>; })}</section>
       {filteredPortals.length === 0 && <div className="access-portal-empty">No workspaces match “{query}”. Try a different role or service.</div>}
       <section className="access-portal-help" id="portal-help"><Workflow size={18}/><div><strong>Need help choosing a workspace?</strong><p>Use the account assigned to you by your institution or administrator. Your actual permissions are determined by the connected authentication service.</p></div><button onClick={() => navigate('/')}>Visit public information <ArrowRight size={14}/></button></section>
-      <p className="access-portal-disclaimer">PRAVAAH-2 demonstration platform · Not an official AICTE service. Sample workflows and records are illustrative.</p>
+      <p className="access-portal-disclaimer">PRAVAAH demonstration platform · Not an official AICTE service. Sample workflows and records are illustrative.</p>
     </main>
   </div>;
 }

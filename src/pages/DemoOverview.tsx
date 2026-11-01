@@ -384,7 +384,7 @@ export default function DemoOverview({ user }: { user: User }) {
         <section className="panel demo-activity"><div className="panel-heading"><div><h3>Recent activity</h3><p>Illustrative events for this workspace</p></div><ActivityIcon /></div><div className="demo-activity-list">{data.activity.map((item, index) => <div className="demo-activity-item" key={item}><span className="demo-activity-dot">{index + 1}</span><p>{item}<small>{['Today · 10:42 AM', 'Today · 9:18 AM', 'Yesterday · 4:36 PM'][index]}</small></p></div>)}</div></section>
         <section className="panel demo-next-actions"><div className="panel-heading"><div><h3>Next actions</h3><p>Suggested workflow steps</p></div></div><NavLink to={data.primaryTo}><span><FileText size={17} /> Review assigned records</span><ArrowUpRight size={16} /></NavLink><NavLink to="/compliance"><span><Bell size={17} /> Check obligations & inbox</span><ArrowUpRight size={16} /></NavLink><NavLink to="/policies"><span><ShieldCheck size={17} /> Review policy register</span><ArrowUpRight size={16} /></NavLink></section>
       </div>
-      <p className="workspace-disclaimer"><ShieldCheck size={14} /> PRAVAAH-2 is an independent demonstration platform, not an official AICTE service. All dashboard figures shown here are synthetic demo data.</p>
+      <p className="workspace-disclaimer"><ShieldCheck size={14} /> PRAVAAH is an independent demonstration platform, not an official AICTE service. All dashboard figures shown here are synthetic demo data.</p>
     </section>
   );
 }

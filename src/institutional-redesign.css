@@ -1,4 +1,4 @@
-/* PRAVAAH-2 — Stitch Institutional Light implementation.
+/* PRAVAAH — Institutional Light design system.
    Loaded after index.css so these rules style the actual active v3 workspace and the public/auth routes. */
 :root {
   color-scheme: light;

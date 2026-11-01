@@ -133,7 +133,7 @@ function LiveOverview() {
         <div><span className="guidance-number">02</span><h3>Follow allowed transitions</h3><p>Only actions supported by the backend should be submitted.</p></div>
         <div><span className="guidance-number">03</span><h3>Record a reason</h3><p>Workflow changes require a reason where the API contract specifies one.</p></div>
       </section>
-      <p className="workspace-disclaimer"><ShieldCheck size={14} /> PRAVAAH-2 is an independent demonstration platform, not an official AICTE service.</p>
+      <p className="workspace-disclaimer"><ShieldCheck size={14} /> PRAVAAH is an independent demonstration platform, not an official AICTE service.</p>
     </section>
   );
 }

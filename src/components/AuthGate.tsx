@@ -227,7 +227,7 @@ export default function AuthGate({ children }: { children: ReactNode }) {
           <p className="auth-footnote">{demoMode && !isPlatformAdminPortal ? <>Demo profile for this workspace: <strong>{demoEmail}</strong><br />Shared demo password: <strong>{demoPassword}</strong><br />UI preview only — demo profiles do not authenticate against the backend.</> : isPlatformAdminPortal ? 'Platform Administrator access requires a real account provisioned in the backend. The shared demo password does not apply.' : 'Only an account provisioned for the selected workspace can access its authorised functions.'}</p>
           </section>
         </div>
-        <p className="auth-disclaimer">PRAVAAH-2 demonstration platform · Not an official AICTE service</p>
+        <p className="auth-disclaimer">PRAVAAH demonstration platform · Not an official AICTE service</p>
       </main>
     );
   }

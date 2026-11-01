@@ -1,6 +1,6 @@
 # PRAVAAH API
 
-Phase 2 backend foundation for PRAVAAH-2.
+FastAPI backend for the PRAVAAH approval workflow platform.
 
 ## Requirements
 - Python 3.12+

@@ -254,7 +254,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
 
-/* Stitch screen integration — Institutional Light Enterprise (DESIGN.md).
+/* Institutional Light Enterprise design system.
    These selectors deliberately target the React components actually rendered by App.tsx. */
 :root {
   --pr-canvas: #f4f6f8;
@@ -321,7 +321,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .pr-modal-backdrop { background:rgba(23,54,93,.4) !important; }
 .pr-modal, .pr-ticket-modal { border:1px solid var(--pr-line) !important; border-radius:8px !important; box-shadow:0 12px 32px rgba(23,43,77,.16) !important; }
 
-/* Role directory and sign-in screens from Stitch exports (6) and (7). */
+/* Role directory and sign-in screens. */
 .access-portal-page { min-height:100vh !important; background:var(--pr-canvas) !important; color:var(--pr-ink) !important; }
 .access-portal-main { max-width:1500px !important; padding:28px clamp(16px,3vw,42px) 34px !important; }
 .access-portal-breadcrumb { color:var(--pr-muted) !important; }
@@ -455,7 +455,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
  *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
 
-/* Full-width public shell and split secure sign-in composition from Stitch screen (7). */
+/* Full-width public shell and split secure sign-in composition. */
 .auth-screen-pravaah { padding:0 !important; display:flex !important; flex-direction:column !important; align-items:stretch !important; justify-content:flex-start !important; background:var(--pr-canvas) !important; }
 .auth-public-topstrip { width:100% !important; min-height:30px !important; margin:0 !important; display:flex !important; justify-content:space-between !important; align-items:center !important; gap:14px !important; padding:6px clamp(16px,4vw,56px) !important; }
 .auth-public-topstrip a { color:#fff !important; text-decoration:none !important; }

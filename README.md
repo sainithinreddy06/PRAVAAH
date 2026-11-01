@@ -18,6 +18,7 @@ PRAVAAH is a prototype platform for organising approval workflows, supporting ev
 - [Security and data handling](#security-and-data-handling)
 - [Testing and verification](#testing-and-verification)
 - [Repository structure](#repository-structure)
+- [Evaluator and technical documentation](#evaluator-and-technical-documentation)
 
 ## Problem context
 Approval and compliance processes can involve multiple stakeholders, policy requirements, supporting documents, review stages, deadlines, and follow-up actions. When these activities are spread across separate records and communication channels, it becomes harder to understand application status, identify missing evidence, and follow up on obligations.
@@ -152,9 +153,8 @@ uvicorn main:app --reload
 Do not assume this example module name applies if the current backend entry point differs.
 
 ### 3. Start the frontend
-Open a second terminal at the repository root:
+Open a second terminal at the repository root (the directory containing `package.json`):
 ```bash
-cd frontend
 npm ci
 npm run dev
 ```
@@ -223,13 +223,24 @@ python -m pytest
 Use the actual script names in `package.json` and the backend test configuration; commands above are examples and may need adjustment. A successful unit-test run does not by itself verify every end-to-end workflow, a production database, deployment configuration, or external integrations. Record fresh test results before presenting them as verified.
 
 ## Repository structure
-The repository is organised around a frontend and backend. Exact paths can change between branches.
 
-- `frontend/` — React/TypeScript user interface.
-- `backend/` — FastAPI application, workflow logic, database access, and tests.
-- Database migration files and deployment configuration — schema evolution and runtime setup.
-- Documentation and environment examples — project setup and developer guidance, where present.
+- `src/`, `public/`, `index.html` — React/TypeScript frontend source and static assets.
+- `backend/` — FastAPI application, workflow logic, database access, migrations, and tests.
+- `docs/` — focused architecture, evaluator walkthrough, security, verification, and feature-specific references.
+- `.env.example`, `docker-compose.yml`, and root configuration files — local configuration and deployment setup.
 
+
+## Evaluator and technical documentation
+
+- [Evaluator demo guide](docs/EVALUATOR_DEMO_GUIDE.md) — a concise walkthrough and demo integrity checklist.
+- [Architecture overview](docs/ARCHITECTURE_OVERVIEW.md) — components, data flow, and design boundaries.
+- [Security and audit boundaries](docs/SECURITY_AND_AUDIT.md) — evidence integrity, hash-chain limitations, and production considerations.
+- [Testing and verification evidence](docs/TESTING_AND_VERIFICATION.md) — recorded CI links and responsible reporting guidance.
+- [Audit hash chain](docs/AUDIT_HASH_CHAIN.md) — audit-chain design and verification.
+- [Evidence integrity](docs/EVIDENCE_INTEGRITY.md) — digest verification on download.
+- [EVC visit workflow](docs/EVC_VISIT_WORKFLOW.md) — visit lifecycle and report revisions.
+- [Obligation deadline provenance](docs/OBLIGATION_DEADLINE_PROVENANCE.md) — configured deadline rules and provenance.
+- [Notification worker](docs/NOTIFICATION_WORKER.md) — supported in-app notification worker behavior.
 
 ## Project links
 - **Repository:** https://github.com/sainithinreddy06/PRAVAAH
